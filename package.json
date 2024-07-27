@@ -2,6 +2,7 @@
   "name": "ai-saas",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -28,6 +29,7 @@
     "clsx": "^2.0.0",
     "crisp-sdk-web": "^1.0.21",
     "dotenv": "^16.4.5",
+    "encoding": "^0.1.13",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "lucide-react": "^0.277.0",
