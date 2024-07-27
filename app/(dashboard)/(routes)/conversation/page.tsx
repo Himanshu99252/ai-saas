@@ -314,7 +314,7 @@ const ConversationPage = () => {
                 )}
               >
                 {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
-                <p className="text-sm">{message.content}</p>
+                <p className="text-sm" style={{whiteSpace: "pre-line"}}>{message.content}</p>
               </div>
             ))}
           </div>

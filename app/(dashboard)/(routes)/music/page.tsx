@@ -113,10 +113,15 @@ const TextToMusic: React.FC = () => {
                     </div>
                 )}
                 {audioUrl && (
-                    <audio ref={audioRef} controls className="w-full mt-8" preload="auto">
-                        <source src={audioUrl} type="audio/mpeg" />
-                        Your browser does not support the audio element.
-                    </audio>
+                    <div className="w-full mt-8">
+                        <audio ref={audioRef} controls className="w-full" preload="auto">
+                            <source src={audioUrl} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href={audioUrl} download="generated_music.mp3">
+                            <Button className="mt-4">Download</Button>
+                        </a>
+                    </div>
                 )}
             </div>
         </div>
